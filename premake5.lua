@@ -18,8 +18,15 @@ project "ImGui"
 		"imstb_textedit.h",
 		"imstb_truetype.h",
 		"imgui_demo.cpp",
+		
 		"misc/cpp/**.h",
 		"misc/cpp/**.cpp",
+		
+		"backends/imgui_impl_win32.h",
+		"backends/imgui_impl_win32.cpp",
+		"backends/imgui_impl_vulkan.h",
+		"backends/imgui_impl_vulkan.cpp",
+
         "%{IncludeDir.imguizmo}/**.h",
         "%{IncludeDir.imguizmo}/**.cpp",
 		"%{IncludeDir.imnodes}/**.h",
