@@ -36,6 +36,7 @@ project "ImGui"
 	includedirs
 	{
 	  "%{prj.location}",
+	  "%{IncludeDir.VULKAN}/include"
 	}
 
     excludes
