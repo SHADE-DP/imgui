@@ -23,15 +23,15 @@ project "ImGui"
 		"misc/cpp/**.h",
 		"misc/cpp/**.cpp",
 		
-		"backends/imgui_impl_win32.h",
-		"backends/imgui_impl_win32.cpp",
+		"backends/imgui_impl_sdl.h",
+		"backends/imgui_impl_sdl.cpp",
 		"backends/imgui_impl_vulkan.h",
 		"backends/imgui_impl_vulkan.cpp",
 
-        "%{IncludeDir.imguizmo}/**.h",
-        "%{IncludeDir.imguizmo}/**.cpp",
+		"%{IncludeDir.imguizmo}/**.h",
+		"%{IncludeDir.imguizmo}/**.cpp",
 		"%{IncludeDir.imnodes}/**.h",
-        "%{IncludeDir.imnodes}/**.cpp",
+		"%{IncludeDir.imnodes}/**.cpp",
 	}
 
 	includedirs
@@ -40,13 +40,13 @@ project "ImGui"
 	  "%{IncludeDir.VULKAN}/include"
 	}
 
-    excludes
-    {
-		"%{IncludeDir.imguizmo}/example**.h",
-		"%{IncludeDir.imguizmo}/example**.cpp",
-		"%{IncludeDir.imguizmo}/vcpkg-example**.h",
-		"%{IncludeDir.imguizmo}/vcpkg-example**.cpp",
-    }
+	excludes
+	{
+	"%{IncludeDir.imguizmo}/example**.h",
+	"%{IncludeDir.imguizmo}/example**.cpp",
+	"%{IncludeDir.imguizmo}/vcpkg-example**.h",
+	"%{IncludeDir.imguizmo}/vcpkg-example**.cpp",
+	}
 
 	links
 	{
