@@ -38,15 +38,17 @@ project "ImGui"
 	{
 	  "%{prj.location}",
 	  "%{IncludeDir.VULKAN}/include",
-		"%{IncludeDir.SDL}/include"
+	  "%{IncludeDir.SDL}/include",
+	  "%{IncludeDir.imguizmo}",
+	  "%{IncludeDir.imnodes}"
 	}
 
 	excludes
 	{
-	"%{IncludeDir.imguizmo}/example**.h",
-	"%{IncludeDir.imguizmo}/example**.cpp",
-	"%{IncludeDir.imguizmo}/vcpkg-example**.h",
-	"%{IncludeDir.imguizmo}/vcpkg-example**.cpp",
+	  "%{IncludeDir.imguizmo}/example**.h",
+	  "%{IncludeDir.imguizmo}/example**.cpp",
+	  "%{IncludeDir.imguizmo}/vcpkg-example**.h",
+	  "%{IncludeDir.imguizmo}/vcpkg-example**.cpp",
 	}
 
 	links
